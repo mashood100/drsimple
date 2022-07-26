@@ -29,7 +29,7 @@ class UpdateprofileService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/update_password.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/update_password.php"),
         body: data,
       );
 
@@ -72,7 +72,7 @@ class UpdateprofileService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/update_number.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/update_number.php"),
         body: data,
       );
 
@@ -113,7 +113,7 @@ class UpdateprofileService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/delete_user.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/delete_user.php"),
         body: data,
       );
 
@@ -158,7 +158,7 @@ class UpdateprofileService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/login.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/login.php"),
         body: data,
       );
 

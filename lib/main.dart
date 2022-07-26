@@ -84,8 +84,7 @@ callbackDispatcher() {
 generalNotification({user_id, flp, isSeen = "0"}) async {
   Map<String, dynamic> data = {"user_id": user_id, "is_seen": isSeen};
   var response = await http.post(
-    Uri.parse(
-        "https://cybernsoft.com/test_api/simple/general_notification.php"),
+    Uri.parse("https://dr-simple.com/test_api/simple/general_notification.php"),
     body: data,
   );
   var convert = await json.decode(response.body);
@@ -112,7 +111,7 @@ broadcasteNotification({
     "user_id": user_id,
   };
   var response = await http.post(
-    Uri.parse("https://cybernsoft.com/test_api/simple/general_broadcast.php"),
+    Uri.parse("https://dr-simple.com/test_api/simple/general_broadcast.php"),
     body: data,
   );
   var convert = await json.decode(response.body);
@@ -138,7 +137,7 @@ seenBroadcasteNotification({user_id, broadcasteID}) async {
     "broadcast_id": broadcasteID
   };
   var response = await http.post(
-    Uri.parse("https://cybernsoft.com/test_api/simple/broadcast_seen.php"),
+    Uri.parse("https://dr-simple.com/test_api/simple/broadcast_seen.php"),
     body: data,
   );
 
@@ -158,8 +157,7 @@ seenNotification({
 }) async {
   Map<String, dynamic> data = {"user_id": user_id, "is_seen": '1'};
   var response = await http.post(
-    Uri.parse(
-        "https://cybernsoft.com/test_api/simple/general_notification.php"),
+    Uri.parse("https://dr-simple.com/test_api/simple/general_notification.php"),
     body: data,
   );
 

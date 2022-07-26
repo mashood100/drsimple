@@ -24,7 +24,7 @@ class LoginAPiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/register.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/register.php"),
         body: data,
       );
 
@@ -67,7 +67,7 @@ class LoginAPiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/forget_password.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/forget_password.php"),
         body: data,
       );
 
@@ -108,7 +108,7 @@ class LoginAPiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/login.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/login.php"),
         body: data,
       );
 
@@ -155,7 +155,7 @@ class LoginAPiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/check_login.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/check_login.php"),
         body: data,
       );
 

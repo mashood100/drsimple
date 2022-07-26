@@ -12,7 +12,7 @@ import 'package:http/http.dart' as http;
 class GetAPIServices extends GetxService {
   Future geDoctors() async {
     final response = await http.get(
-      Uri.parse("https://cybernsoft.com/test_api/simple/doctors.php"),
+      Uri.parse("https://dr-simple.com/test_api/simple/doctors.php"),
     );
 
     if (response.statusCode == 200) {
@@ -26,7 +26,7 @@ class GetAPIServices extends GetxService {
 
   Future getCovidDate() async {
     final response = await http.get(
-      Uri.parse("https://cybernsoft.com/test_api/simple/available_covid.php"),
+      Uri.parse("https://dr-simple.com/test_api/simple/available_covid.php"),
     );
 
     if (response.statusCode == 200) {
@@ -45,7 +45,7 @@ class GetAPIServices extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/single_patient.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/single_patient.php"),
         body: data,
       );
 
@@ -72,7 +72,7 @@ class GetAPIServices extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/recipe.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/recipe.php"),
         body: data,
       );
 
@@ -95,7 +95,7 @@ class GetAPIServices extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/categories.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/categories.php"),
         body: data,
       );
 
@@ -121,7 +121,7 @@ class GetAPIServices extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/request_status.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/request_status.php"),
         body: data,
       );
 
@@ -144,7 +144,7 @@ class GetAPIServices extends GetxService {
     try {
       var response = await http.post(
         Uri.parse(
-            "https://cybernsoft.com/test_api/simple/notification_history.php"),
+            "https://dr-simple.com/test_api/simple/notification_history.php"),
         body: data,
       );
 

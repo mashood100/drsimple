@@ -37,7 +37,7 @@ class _CreateReferalPageState extends State<CreateReferalPage> {
                   textSize: 30,
                   textFamily: 'Intel',
                   textColor: mainThemeSecondryColor,
-                  textValue: "Bitte geben Sie das\nMedikament ein",
+                  textValue: "Bitte geben Sie den Arzt \nzur Überweisung an",
                 ),
               ),
               Padding(
@@ -48,7 +48,7 @@ class _CreateReferalPageState extends State<CreateReferalPage> {
                     CustomAppTextFeild(
                       controller: _textEditingController,
                       width: MediaQuery.of(context).size.width * 0.9,
-                      hintText: "z.B. Ramipril",
+                      hintText: "z. B. Neurologe",
                     ),
                     CustomAppButton(
                       Onclick: _textEditingController.text == ""

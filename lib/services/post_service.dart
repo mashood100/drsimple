@@ -23,7 +23,7 @@ class PostApiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/recipe_create.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/recipe_create.php"),
         body: data,
       );
 
@@ -58,7 +58,7 @@ class PostApiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/delete_recipe.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/delete_recipe.php"),
         body: data,
       );
 
@@ -93,7 +93,7 @@ class PostApiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/order.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/order.php"),
         body: data,
       );
 
@@ -131,7 +131,7 @@ class PostApiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/category_create.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/category_create.php"),
         body: data,
       );
 
@@ -144,7 +144,7 @@ class PostApiService extends GetxService {
           Fluttertoast.showToast(msg: "Referal Created ");
         } else {
           //debug the responce Status code
-          inspect("Recipe API $statusCode");
+          inspect("createReferal API $statusCode");
           Fluttertoast.showToast(msg: "Can't proccess request");
         }
       } else {
@@ -167,7 +167,7 @@ class PostApiService extends GetxService {
     try {
       var response = await http.post(
         Uri.parse(
-            "https://cybernsoft.com/test_api/simple/delete_categories.php"),
+            "https://dr-simple.com/test_api/simple/delete_categories.php"),
         body: data,
       );
 
@@ -203,7 +203,7 @@ class PostApiService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/referal_create.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/referal_create.php"),
         body: data,
       );
 

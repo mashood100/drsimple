@@ -21,7 +21,7 @@ class AppoinmentService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/appointment.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/appointment.php"),
         body: data,
       );
 
@@ -57,7 +57,7 @@ class AppoinmentService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/covid.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/covid.php"),
         body: data,
       );
 
@@ -93,7 +93,7 @@ class AppoinmentService extends GetxService {
 
     try {
       var response = await http.post(
-        Uri.parse("https://cybernsoft.com/test_api/simple/consult.php"),
+        Uri.parse("https://dr-simple.com/test_api/simple/consult.php"),
         body: data,
       );
 

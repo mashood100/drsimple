@@ -41,7 +41,7 @@ class _CreateRecipePageState extends State<CreateRecipePage> {
                     textSize: 30,
                     textFamily: 'Intel',
                     textColor: mainThemeSecondryColor,
-                    textValue: " Bitte geben Sie den Arzt\n zur Überweisung an",
+                    textValue: " Geben Sie Medikament \nand Dosierung an",
                   ),
                 ),
                 Padding(
@@ -52,7 +52,7 @@ class _CreateRecipePageState extends State<CreateRecipePage> {
                       CustomAppTextFeild(
                         controller: _nameContr,
                         width: MediaQuery.of(context).size.width * 0.9,
-                        hintText: "z.B. Neurologe",
+                        hintText: "z. B. Ramipril",
                       ),
                       Padding(
                         padding: EdgeInsets.only(
