@@ -12,7 +12,7 @@ import 'package:http/http.dart' as http;
 class GetAPIServices extends GetxService {
   Future geDoctors() async {
     final response = await http.get(
-      Uri.parse("https://dr-simple.com/test_api/simple/doctors.php"),
+      Uri.parse("https://dr-simple.com/test_api/simple/doctors.php?id=1"),
     );
 
     if (response.statusCode == 200) {

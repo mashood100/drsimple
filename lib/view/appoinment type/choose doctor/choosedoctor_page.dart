@@ -55,6 +55,7 @@ class _ChooseDoctorState extends State<ChooseDoctor> {
                         itemCount: snapshot.data.length,
                         itemBuilder: (context, index) {
                           return ChooseDoctorTile(
+                              imageURL: snapshot.data[index]["image"],
                               id: snapshot.data[index]["id"],
                               nameText: snapshot.data[index]["name"],
                               titleText: snapshot.data[index]["qualification"],

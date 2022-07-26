@@ -10,11 +10,13 @@ class ChooseDoctorTile extends StatefulWidget {
   final subtitleText1;
   final subtitleText2;
   final id;
+  final imageURL;
   const ChooseDoctorTile({
     this.nameText,
     this.titleText,
     this.subtitleText1,
     this.subtitleText2,
+    this.imageURL,
     this.id,
   });
 
@@ -56,8 +58,8 @@ class _ChooseDoctorTileState extends State<ChooseDoctorTile> {
                       height: MediaQuery.of(context).size.height * 0.16,
                       width: MediaQuery.of(context).size.width * 0.25,
                       decoration: BoxDecoration(
-                          image: const DecorationImage(
-                            image: AssetImage('assets/images/doctor.png'),
+                          image: DecorationImage(
+                            image: NetworkImage(widget.imageURL),
                             fit: BoxFit.fill,
                           ),
                           borderRadius: BorderRadius.circular(12)),
